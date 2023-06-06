@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "oLkX/KbfogJMaQ9r8N2T8yaBIMsXfSwRle9wDumvuHXjV3DcY+nXWbVS8KOwNTZfXpoEMAEfzsGqtRnDaGXO6Q==",
+  "dgSpecHash": "Lw5aBVcXaYc0RKESGa4ZH3Fta7ONobHFy5RKCAjBo7KM5OtzyOZF5ilNFmFP60vOCdekbh+35zGM9r++mREWbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\Görsel Programlama\\QRCodeUI-(FinishedProject)\\QRCodeUI\\QRCodeUI.csproj",
+  "projectFilePath": "C:\\Users\\dkfb_\\Desktop\\Github\\QRCodeUI\\QRCodeUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
+    "C:\\Users\\dkfb_\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\dkfb_\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\dkfb_\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\dkfb_\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\dkfb_\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\dkfb_\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
   ],
   "logs": [
     {

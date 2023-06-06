@@ -13,11 +13,14 @@
 </head>
 
 <body>
+    <!-- Ana div -->
     <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
+                    <!-- QR kodunu taramak için form -->
                     <form id="qrForm" asp-action="RunQRScanner" method="post">
+                        <!-- Kamera seçim dropdown listesi -->
                         <div class="d-flex mt-5 align-items-center justify-content-center">
                             <select name="cameraSelection" class="form-select p-3 px-5 text-muted">
                                 @for (var i = 0; i < Model.CameraList.Count; i++)
@@ -26,6 +29,7 @@
                                 }
                             </select>
                         </div>
+                        <!-- QR kodunu taramak için buton -->
                         <div class="d-flex mt-5 align-items-center justify-content-center">
                             <button type="button" id="scanQrButton" class="btn p-2 px-4" style="color: white; background-color: #E96479;"></button>
                         </div>
@@ -34,6 +38,7 @@
             </div>
         </div>
     </div>
+    <!-- Onay modali -->
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -57,6 +62,7 @@
         </div>
     </div>
 
+    <!-- QR kodunun tarama sonucunu gösteren modal -->
     @if (!string.IsNullOrEmpty(Model.QrCodeResult))
     {
     <!-- Result Modal -->
@@ -71,28 +77,27 @@
                     <p id="modalResult">@Model.QrCodeResult</p>
                 </div>
                 <div class="modal-footer">
-                    <!-- FontAwesome copy icon -->
                     <i class="fa fa-copy" id="copyButton" style="cursor: pointer;"></i>
                 </div>
             </div>
         </div>
     </div>
 
-        <script>
-            $(document).ready(function () {
-                // Automatically show the result modal when the page loads
-                var resultModal = new bootstrap.Modal(document.getElementById('resultModal'), {});
-                resultModal.show();
+    <script>
+        $(document).ready(function () {
+            // Automatically show the result modal when the page loads
+            var resultModal = new bootstrap.Modal(document.getElementById('resultModal'), {});
+            resultModal.show();
 
-                var result = '@Model.QrCodeResult';
-                $("#modalResult").text(result);
+            var result = '@Model.QrCodeResult';
+            $("#modalResult").text(result);
 
-                $("#copyButton").click(function () {
-                    toastr.success('Result copied to clipboard.', 'Success', {positionClass: 'toast-bottom-right mb-5'});
-                    navigator.clipboard.writeText(result);
-                });
+            $("#copyButton").click(function () {
+                toastr.success('Result copied to clipboard.', 'Success', {positionClass: 'toast-bottom-right mb-5'});
+                navigator.clipboard.writeText(result);
             });
-        </script>
+        });
+    </script>
     }
 </body>
 
