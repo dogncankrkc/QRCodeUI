@@ -12,3 +12,7 @@ This project contains an application developed in C# that can generate and read 
 ## Usage
 
 Once you run the application, you will have a user interface that provides options to generate or read QR codes.
+
+## License
+
+This project is licensed under the MIT License.
